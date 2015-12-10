@@ -1,4 +1,4 @@
-public class Prism extends Rectangle{
+public class Prism extends Rectangle implements Volume{
 
     private double height;
 
@@ -16,6 +16,6 @@ public class Prism extends Rectangle{
     }
 
     public String toString(){
-	return "Prism " + getName() + "that is " + getLength() + " by " + getWirdth() + " by " + getHeight();
+	return "Prism " + getName() + "that is " + getLength() + " by " + getWidth() + " by " + getHeight();
     }
 }
