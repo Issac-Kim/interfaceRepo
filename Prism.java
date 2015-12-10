@@ -1,0 +1,21 @@
+public class Prism extends Rectangle{
+
+    private double height;
+
+    public Prism(double length, double width, double height, String name){
+	super(length,width,name);
+	this.height = height;
+    }
+
+    public double getHeight(){
+	return height;
+    }
+
+    public double getVolume(){
+	return getHeight() * getArea();
+    }
+
+    public String toString(){
+	return "Prism " + getName() + "that is " + getLength() + " by " + getWirdth() + " by " + getHeight();
+    }
+}
